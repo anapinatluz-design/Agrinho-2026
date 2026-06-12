@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Fazenda do Futuro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <h1>AGRINHO 2026</h1>
+        </div>
+        <div class="tema-area">
+            <h2>Agro Forte, Futuro Sustentável</h2>
+            <p>Equilíbrio entre Produção e Meio Ambiente</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="container-fazenda">
+            <div class="instrucao">
+                <h3>Explore a Fazenda do Futuro</h3>
+                <p>Clique nos pontos brilhantes ao lado dos títulos para entender o equilíbrio do Agro Sustentável.</p>
+            </div>
+
+            <div class="mapa-interativo">
+                <img src="agrinho2026.png" alt="Mapa Interativo da Fazenda do Futuro" class="imagem-mapa">
+                
+                <button class="ponto-clique" data-local="lavoura" style="top: 19%; left: 6%;" title="Lavoura Inteligente"></button>
+                <button class="ponto-clique" data-local="sensores" style="top: 44%; left: 0%;" title="Sensores de Solo"></button>
+                <button class="ponto-clique" data-local="drones" style="top: 21%; left: 42%;" title="Monitoramento de Drones"></button>
+                <button class="ponto-clique" data-local="reserva" style="top: 59%; left: 25%;" title="Reserva Legal"></button>
+                <button class="ponto-clique" data-local="agua" style="top: 53%; left: 51%;" title="Água Limpa Protegida"></button>
+                <button class="ponto-clique" data-local="usina" style="top: 25%; left: 74%;" title="Usina de Energia Limpa"></button>
+                <button class="ponto-clique" data-local="ilpf" style="top: 79%; left: 69%;" title="Integração L-P-F"></button>
+            </div>
+        </section>
+
+        <div id="container-btn-quiz" style="display: none; text-align: center; margin-top: 20px;">
+            <button id="btn-iniciar-quiz" class="btn-estilizado">🚀 Testar meus conhecimentos!</button>
+        </div>
+    </main>
+
+    <div id="modal-info" class="modal-escondido">
+        <div class="conteudo-modal">
+            <span id="fechar-modal">&times;</span>
+            <div class="icone-modal" id="modal-icone">🌱</div>
+            <h3 id="modal-titulo">Título da Informação</h3>
+            <p id="modal-texto">Texto explicativo aqui...</p>
+        </div>
+    </div>
+
+    <div id="modal-quiz" class="modal-escondido">
+        <div class="conteudo-modal quiz-card">
+            
+            <div id="quiz-tela-pergunta">
+                <div class="progresso-quiz">Pergunta <span id="num-pergunta">1</span> de 7</div>
+                <p id="pergunta-texto" style="font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #1b4d3e;"></p>
+                <div id="opcoes-respostas"></div>
+            </div>
+
+            <div id="quiz-tela-resultado" style="display: none;">
+                <div class="icone-modal">🏆</div>
+                <h3>Fim da Jornada!</h3>
+                <p id="feedback-resultado" style="margin: 20px 0; font-size: 1.1rem;"></p>
+                <button onclick="location.reload()" class="btn-estilizado">Reiniciar Exploração</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho - Desenvolvido no Visual Studio Code</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
